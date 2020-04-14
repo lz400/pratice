@@ -23,8 +23,8 @@ def weather(request, year, city):
     return HttpResponse('xixi')
 
 def get_data(request):
-    a = request.Get.get('a')
-    b = request.GET.get('b')
+    a = request.POST.get('a')
+    b = request.POST.get('b')
     alist = request.GET.getlist('a')
     print(a)
     print(b)
